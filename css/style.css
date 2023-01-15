@@ -25,19 +25,6 @@ html {
   overflow-x: hidden;
 }
 
-html::-webkit-scrollbar {
-  width: 1rem;
-}
-
-html::-webkit-scrollbar-track {
-  background: #fff;
-}
-
-html::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
-  border-radius: 5rem;
-}
-
 section {
   padding: 2rem 9%;
 }
@@ -190,14 +177,14 @@ section {
 }
 /* About */
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 47px;
-    font-size: 3.2rem;
-    margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 47px;
+  font-size: 3.2rem;
+  margin-top: 4rem;
 }
 .banner-container {
   display: -webkit-box;
@@ -208,7 +195,6 @@ section {
   gap: 3rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  /* background: var(--main-color); */
 }
 
 .banner-container .banner {
@@ -261,6 +247,7 @@ section {
     opacity: 0;
   }
 }
+
 /* Appointment  */
 .appointment {
   background: var(--main-color);
@@ -438,8 +425,9 @@ section.services {
   padding: 100px 0;
 }
 
-/* ------------------- our 3rd section
+/* ------------ Brand at Store
 ------------------------------------ */
+
 .slide-container {
   max-width:1120px;
   width: 100%;
@@ -472,31 +460,6 @@ section.services {
   padding: 25px 0;
 }
 
-/* .overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #4070F4;
-  border-radius: 25px 25px 0 25px;
-} */
-
-/* .overlay::before,
-.overlay::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: #4070F4;
-} */
-
-/* .overlay::after {
-  border-radius: 0 25px 0 0;
-  background-color: #FFF;
-} */
 
 .card-image {
   position: relative;
@@ -508,19 +471,14 @@ section.services {
 }
 
 .card-image .card-img {
-  /* height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #4070F4; */
   position: absolute;
-    width: 230px;
-    height: 150px;
-    left: 0px;
-    top: 0px;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+  width: 230px;
+  height: 150px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
 }
 
 .name {
@@ -528,12 +486,6 @@ section.services {
   font-weight: 500;
   color: #333;
 }
-
-/* .description {
-  font-size: 14px;
-  color: #707070;
-  text-align: center;
-} */
 
 .button {
   border: none;
@@ -592,7 +544,62 @@ section.services {
   }
 }
 
+/* services section */
+
+.container {
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-card {
+  height: 300px;
+  width: 300px;
+  margin: 0 80px;
+  background: white;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.service-card .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+}
+
+.service-card .img img {
+  object-fit: cover;
+}
+
+.service-card .top-text {
+  padding: 5px;
+}
+
+.service-card .top-text .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  margin-bottom: 25px;
+  color: var(--primary-color);
+}
+
+.service-card .top-text p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 20px;
+}
+
 /* Footer Section */
+
 .footer h1 {
   display: flex;
   justify-content: center;
@@ -638,4 +645,16 @@ section.services {
 .footer .credit span {
   color: var(--text-color);
 }
+/* End Footer */
 
+@media screen and (max-width: 978px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .service-card {
+    max-width: 700px;
+    margin: 20px -151px;
+  }
+}
