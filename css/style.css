@@ -599,7 +599,7 @@ section.services {
 }
 
 /* Footer Section */
-
+/* 
 .footer h1 {
   display: flex;
   justify-content: center;
@@ -644,7 +644,8 @@ section.services {
 
 .footer .credit span {
   color: var(--text-color);
-}
+} */
+
 /* End Footer */
 
 @media screen and (max-width: 978px) {
@@ -657,4 +658,44 @@ section.services {
     max-width: 700px;
     margin: 20px -151px;
   }
+}
+
+/* footer */
+footer {
+  width: 100%;
+  background: var(--primary-color);
+  height: auto;
+  padding: 5rem 20rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer .logo-div {
+  color: #fff;
+  width: 13rem;
+  height: 5.5rem;
+}
+.logo-div a {
+  color: #fff;
+}
+
+footer .footer-menu {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer div h4 {
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+footer div a {
+  font-size: 1.7rem;
+  line-height: 150%;
+}
+
+footer .footer-div-5 a {
+  font-size: 1.5rem;
 }

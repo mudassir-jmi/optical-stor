@@ -7,8 +7,157 @@
     <title>Optical Store | About</title>
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
 </head>
+<style>
+    h1 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 47px;
+    }
+    section {
+  padding: 2rem 9%;
+    }
+
+    .about-section {
+        background: #F1ECE4;
+    }
+    .about-section h2 {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .about-section p {
+        text-align: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    overflow-x: hidden;
+    padding: 3rem 0;
+}
+    .row .imgWrapper {
+        overflow: hidden;
+    }
+    .row .imgWrapper img{
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        transition: 0.3s;
+        border-radius: 15px;
+    }
+    .row .imgWrapper:hover img{
+        transform: scale(1.25);
+    }
+    .row .contentWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
+    }
+    .row .contentWrapper span.textWrapper{
+        text-transform: capitalize;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        color: #000;
+    }
+
+    .row .contentWrapper p {
+        text-align: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    @media (max-width: 991px){
+        .row {
+            grid-template-columns: 1fr;
+            grid-gap: 50px;
+        }
+        .row .contentWrapper{
+            padding-left: 0;
+        }
+    }
+    @media (max-width: 768px) {
+        .row {
+            width: 90%;
+        }
+        .row .contentWrapper p {
+            line-height: 24px;
+        }
+    }
+    @media (max-width: 575px) {
+        .row .contentWrapper span.textWrapper{
+            font-size: 18px;
+        }
+        .row .contentWrapper p{
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+</style>
 <body>
-    <h1 style="text-align: center;">This Site is Under Construction because  
-    cement is not availabe 😆 😆 😆</h1>
+    <h1 style="text-align: center;">About Us</h1>
+<section class="about-section" id="section-four">
+    <h2 style="text-align: center;">OUR STORY</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Laborum ea, culpa veniam ex aliquam vitae fugiat quas sequi
+        eligendi assumenda eius dolore pariatur ipsum officiis cumque 
+        odit reiciendis cupiditate recusandae!
+    </p>
+<!-- right side of section -->
+    <div class="row">
+        <div class="imgWrapper">
+            <img src="./image/about-img.png" alt="">
+        </div>
+        <div class="contentWrapper">
+            <div class="content">
+                <span class="textWrapper">
+                    <span>OUR MISSION</span>
+                </span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id reiciendis quo recusandae? Sapiente rem
+                    omnis, nam consequuntur dignissimos libero maiores, voluptates quod accusamus doloribus fuga ducimus
+                    quibusdam tenetur placeat ratione quidem soluta laboriosam animi in 
+                    repellat qui mollitia atque.
+                </p>
+            </div>
+        </div>
+    </div>
+<!-- left side -->
+        <div class="row">
+            <div class="contentWrapper">
+                <div class="content">
+                    <span class="textWrapper">
+                        <span>OUR VISION</span>
+                    </span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id reiciendis quo recusandae? Sapiente rem
+                        omnis, nam consequuntur dignissimos libero maiores, voluptates quod accusamus doloribus fuga ducimus
+                        quibusdam tenetur placeat ratione quidem soluta laboriosam animi in
+                        repellat qui mollitia atque.
+                    </p>
+                </div>
+            </div>
+
+            <div class="imgWrapper">
+                <img src="./image/about-img1.png" alt="">
+            </div>
+        </div>
+</section>
 </body>
 </html>
