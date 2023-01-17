@@ -599,7 +599,7 @@ section.services {
 }
 
 /* Footer Section */
-/* 
+
 .footer h1 {
   display: flex;
   justify-content: center;
@@ -644,7 +644,7 @@ section.services {
 
 .footer .credit span {
   color: var(--text-color);
-} */
+}
 
 /* End Footer */
 
@@ -661,7 +661,8 @@ section.services {
 }
 
 /* footer */
-footer {
+
+/* footer {
   width: 100%;
   background: var(--primary-color);
   height: auto;
@@ -698,4 +699,4 @@ footer div a {
 
 footer .footer-div-5 a {
   font-size: 1.5rem;
-}
+} */
