@@ -5,110 +5,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optical Store | Product</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
 </head>
+<style>
+    .product-heading {
+        display: flex;
+        justify-content: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 47px;
+    }
+    .image-content {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .image-content .card-image {
+        width: 240px;
+        height: 220px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);
+        border-radius: 15px;
+        margin-bottom: 40px;
+    }
+    .image-content .card-image .name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .image-content .card-image .img-price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #00535E;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+    }
+</style>
 <body>
-    <h1 style="text-align: center;">This Site is Under Construction because
-        cement is not availabe 😆 😆 😆</h1>
-        <section class="brand" id="brand">
-            <h1 class="heading"> Brand At Our Store </h1>
-            <div class="slide-container swiper">
-                <div class="slide-content">
-                    <div class="card-wrapper swiper-wrapper">
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <!-- <span class="overlay"></span> -->
-        
-                                <div class="card-image">
-                                    <img src="image/brand1.png" alt="" class="card-img">
-                                </div>
-                            </div>
-        
-                            <div class="card-content">
-                                <h2 class="name">John Jacob</h2>
-                                <button class="button">View More</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <!-- <span class="overlay"></span> -->
-        
-                                <div class="card-image">
-                                    <img src="image/brand2.png" alt="" class="card-img">
-                                </div>
-                            </div>
-        
-                            <div class="card-content">
-                                <h2 class="name">John Jacob</h2>
-                                <button class="button">View More</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <!-- <span class="overlay"></span> -->
-        
-                                <div class="card-image">
-                                    <img src="image/brand3.png" alt="" class="card-img">
-                                </div>
-                            </div>
-        
-                            <div class="card-content">
-                                <h2 class="name">John Jacob</h2>
-                                <button class="button">View More</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <!-- <span class="overlay"></span> -->
-        
-                                <div class="card-image">
-                                    <img src="image/brand4.png" alt="" class="card-img">
-                                </div>
-                            </div>
-        
-                            <div class="card-content">
-                                <h2 class="name">John Jacob</h2>
-                                <button class="button">View More</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <!-- <span class="overlay"></span> -->
-        
-                                <div class="card-image">
-                                    <img src="image/brand1.png" alt="" class="card-img">
-                                </div>
-                            </div>
-        
-                            <div class="card-content">
-                                <h2 class="name">John Jacob</h2>
-                                <button class="button">View More</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <!-- <span class="overlay"></span> -->
-        
-                                <div class="card-image">
-                                    <img src="image/brand2.png" alt="" class="card-img">
-                                </div>
-                            </div>
-        
-                            <div class="card-content">
-                                <h2 class="name">John Jacob</h2>
-                                <button class="button">View More</button>
-                            </div>
-                        </div>
-        
-                    </div>
-                </div>
-        
-                <!-- <div class="swiper-button-next swiper-navBtn"></div>
-                <div class="swiper-button-prev swiper-navBtn"></div> -->
-                <!-- <div class="swiper-pagination"></div> -->
+   <section class="product">
+    <h1 class="product-heading"> Our Products </h1>
+    <div class="product-container">
+        <div class="image-content">
+            <div class="card-image">
+                <img src="image/brand1.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
             </div>
-        
-        </section>
+
+            <div class="card-image">
+                <img src="image/brand1.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+
+            <div class="card-image">
+                <img src="image/brand1.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+
+            <div class="card-image">
+                <img src="image/brand1.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+        </div>
+
+        <div class="image-content">
+            <div class="card-image">
+                <img src="image/brand2.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+
+            <div class="card-image">
+                <img src="image/brand2.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+
+            <div class="card-image">
+                <img src="image/brand2.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+
+            <div class="card-image">
+                <img src="image/brand2.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+        </div>
+
+        <div class="image-content">
+            <div class="card-image">
+                <img src="image/brand3.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+
+            <div class="card-image">
+                <img src="image/brand3.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+
+            <div class="card-image">
+                <img src="image/brand3.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+
+            <div class="card-image">
+                <img src="image/brand4.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+        </div>
+
+        <div class="image-content">
+            <div class="card-image">
+                <img src="image/brand4.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+
+            <div class="card-image">
+                <img src="image/brand4.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+
+            <div class="card-image">
+                <img src="image/brand4.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+
+            <div class="card-image">
+                <img src="image/brand4.png" alt="" class="card-img">
+                <span class="name">John Jacob</span>
+                <span class="img-price">Rs199</span>
+            </div>
+
+        </div>
+    </div>
+    </section>
 </body>
 </html>
