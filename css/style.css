@@ -599,8 +599,11 @@ section.services {
 }
 
 /* Footer Section */
-
-.footer h1 {
+.footer {
+  background: var(--primary-color);
+  color: var(--accent-color);
+}
+.share-heading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -609,12 +612,12 @@ section.services {
   line-height: 47px;
 }
 
-.footer .share {
+.share {
   padding-top: 2rem;
   text-align: center;
 }
 
-.footer .share a {
+.share a {
   font-size: 2rem;
   height: 5rem;
   width: 5rem;
@@ -625,13 +628,13 @@ section.services {
   margin: .3rem;
 }
 
-.footer .share a:hover {
+.share a:hover {
   background: var(--text-color);
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
 
-.footer .credit {
+/* .footer .credit {
   margin-top: 2.5rem;
   padding: 1rem;
   padding-top: 2rem;
@@ -640,10 +643,32 @@ section.services {
   font-size: 2rem;
   width: 100%;
   height: 100px;
+} */
+
+/* .footer .credit span {
+  color: var(--text-color);
+} */
+.footer {
+  margin-top: 3rem;
+}
+.footer-links {
+  /* color: var(--main-color); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+  /* width: 100%;
+  height: 100px; */
 }
 
-.footer .credit span {
-  color: var(--text-color);
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* End Footer */
@@ -660,43 +685,3 @@ section.services {
   }
 }
 
-/* footer */
-
-/* footer {
-  width: 100%;
-  background: var(--primary-color);
-  height: auto;
-  padding: 5rem 20rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-footer .logo-div {
-  color: #fff;
-  width: 13rem;
-  height: 5.5rem;
-}
-.logo-div a {
-  color: #fff;
-}
-
-footer .footer-menu {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-footer div h4 {
-  color: #FFFFFF;
-  font-size: 2rem;
-  text-transform: capitalize;
-}
-
-footer div a {
-  font-size: 1.7rem;
-  line-height: 150%;
-}
-
-footer .footer-div-5 a {
-  font-size: 1.5rem;
-} */
