@@ -538,7 +538,6 @@ section.services {
   .slide-content {
     margin: 0 10px;
   }
-
   .swiper-navBtn {
     display: none;
   }
@@ -638,6 +637,7 @@ section.services {
 .footer {
   margin-top: 3rem;
 }
+
 .footer-links {
   display: flex;
   align-items: center;

@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optical Store | Product</title>
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
 </head>
 <style>
+    section.product-banner {
+        background: #FFCC43;
+    }
+    .banner-img {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        font-size: 2rem;
+    }
+    .banner-img img {
+        width: 180px;
+    }
+
     .product-heading {
         display: flex;
         justify-content: center;
@@ -25,11 +38,18 @@
     }
     .image-content .card-image {
         width: 240px;
-        height: 220px;
+        height: 200px;
         background: #FFFFFF;
         box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);
         border-radius: 15px;
         margin-bottom: 40px;
+    }
+    .image-content .card-image img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 140px;
     }
     .image-content .card-image .name {
         display: flex;
@@ -51,8 +71,16 @@
         font-weight: 300;
         font-size: 20px;
     }
+
 </style>
 <body>
+    <section class="product-banner">
+        <div class="banner-img">
+            <img src="./image/product1.png" alt="product">
+            <img src="./image/product2.png" alt="product">
+            <img src="./image/product3.png" alt="product">
+        </div>
+    </section>
    <section class="product">
     <h1 class="product-heading"> Our Products </h1>
     <div class="product-container">
