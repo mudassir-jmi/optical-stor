@@ -273,7 +273,7 @@ section.product-banner {
     }
 
     @media (max-width: 500px) {
-        .checkup-btn {
+        .checkup-btn,.service-btn {
         display: block;
         text-align: center;
         padding: 0.6rem 0rem;
