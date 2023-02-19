@@ -4,6 +4,9 @@
     --text-color: #577592;
     --main-color: #F1ECE4;
 }
+section {
+    padding: 2rem 3%;
+}
 
 section.product-banner {
     background: #FFCC43;
@@ -147,8 +150,8 @@ section.product-banner {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 80px;
-            overflow-x: hidden;
-            padding: 3rem 0;
+            /* overflow-x: hidden; */
+            padding: 3rem 50;
         }
     
         .row .imgWrapper {
@@ -162,7 +165,7 @@ section.product-banner {
             transition: 0.3s;
             border-radius: 15px;
         }
-    
+
         .row .imgWrapper:hover img {
             transform: scale(1.25);
         }
@@ -172,7 +175,7 @@ section.product-banner {
             display: flex;
             justify-content: center;
             align-items: center;
-            /* padding-left: 30px; */
+            padding-left: 30px;
         }
     
         .row .contentWrapper {
@@ -210,7 +213,7 @@ section.product-banner {
     
         @media (max-width: 768px) {
             .row {
-                width: 90%;
+                width: 100%;
             }
     
             .row .contentWrapper p {
@@ -227,30 +230,57 @@ section.product-banner {
                 font-size: 20px;
                 line-height: 22px;
             }
+            .row .imgWrapper img {
+                width: 100%;
+                height: auto;
+            }
         }
 
 /* Services Page */
-.service-card-btn {
-    display: flex;
-    margin: 0 auto;
-    padding: 15px 36px;
-    width: 150px;
-    height: 30px;
-    background: var(--primary-color);
-    color: var(--main-color);
-    border-radius: 10px;
-    /* margin-top: 20px; */
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 24px;
-    cursor: pointer;
-    text-decoration: none;
-}
-.check {
-    width: 220px;
-}
+
 .service-heading {
     text-align: center;
     color: var(--secondary-color);
 }
+
+.service-btn {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: .9rem 1rem;
+    border-radius: .5rem;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    width: 150px;
+    height: 30px;
+} 
+
+.checkup-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.9rem 3rem;
+    border-radius: 0.5rem;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    text-decoration: none;
+    }
+
+    @media (max-width: 500px) {
+        .checkup-btn {
+        display: block;
+        text-align: center;
+        padding: 0.6rem 0rem;
+        font-size: 1.2rem;
+        }
+    }
+
+
+
 
