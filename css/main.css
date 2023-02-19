@@ -243,7 +243,7 @@ section.product-banner {
     color: var(--secondary-color);
 }
 
-.service-btn {
+/* .service-btn {
     display:flex;
     justify-content: center;
     align-items: center;
@@ -258,9 +258,9 @@ section.product-banner {
     text-decoration: none;
     width: 150px;
     height: 30px;
-} 
+}  */
 
-.checkup-btn {
+.checkup-btn,.service-btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.9rem 3rem;
