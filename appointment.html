@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
 </head>
 <style>
+  .modal {
+    display: none;
+  }
 #body_header {
   width:auto;
   margin:0px auto;
@@ -123,7 +126,7 @@ label.light {
 
 </style>
 <body>
-    <div id="container">
+    <div id="container" class="model">
         <div id="body_header">
             <h1>Appointment Request Form</h1>
             <p>Make your appointments more easier</p>
@@ -157,5 +160,27 @@ label.light {
             <button type="submit">Request For Appointment</button>
         </form>
     </div>
+
+    <script>
+      let modalBtns = [...document.querySelectorAll(".primary-button")];
+      modalBtns.forEach(function (btn) {
+        btn.onclick = function () {
+          let modal = btn.getAttribute("data-modal");
+          document.getElementById(container).style.display = "block";
+        };
+      });
+      let closeBtns = [...document.querySelectorAll(".close")];
+      closeBtns.forEach(function (btn) {
+        btn.onclick = function () {
+          let modal = btn.closest(".modal");
+          modal.style.display = "none";
+        };
+      });
+      window.onclick = function (event) {
+        if (event.target.className === "modal") {
+          event.target.style.display = "none";
+        }
+      };
+    </script>
 </body>
 </html>

@@ -1,9 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
     --primary-color: #00535e;
     --secondary-color: #ffcc43;
     --text-color: #577592;
     --main-color: #F1ECE4;
 }
+
 section {
     padding: 2rem 3%;
 }
@@ -31,14 +37,14 @@ section.product-banner {
 }
 
 
-.image-content {
+.image-wrapper {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 70px;
 }
 
-.image-content .card-image {
+.image-wrapper .card-img {
     width: 240px;
     height: 352px;
     background: #FFFFFF;
@@ -47,7 +53,7 @@ section.product-banner {
     margin-bottom: 40px;
 }
 
-.image-content .card-image img {
+.image-wrapper .card-img img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +61,7 @@ section.product-banner {
     height: 140px;
 }
 
-.image-content .card-image .img-name {
+.image-wrapper .card-img .img-name {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +73,7 @@ section.product-banner {
     color: #000;
 }
 
-.image-content .card-image .img-description {
+.image-wrapper .card-img .img-description {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,7 +86,7 @@ section.product-banner {
     line-height: 28px;
 }
 
-.image-content .card-image .img-price {
+.image-wrapper .card-img .img-price {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +98,7 @@ section.product-banner {
     margin-top: 20px;
 }
 
-.image-content .card-image .img-btn {
+.image-wrapper .card-img .img-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,6 +119,7 @@ section.product-banner {
     flex-wrap: wrap;
     margin-right: 120px;
     font-size: 20px;
+    margin-top: 80px;
 }
 
 .pagination a {
@@ -143,7 +150,7 @@ section.product-banner {
     .sunglass-banner {
         padding: 2rem 9%;
         background: #F1ECE4;
-        margin-top: 40px;
+        margin-top: 80px;
     }
         .row {
             width: 100%;
@@ -192,12 +199,17 @@ section.product-banner {
 
         .row .contentWrapper p {
             /* text-align: center; */
-            text-align: justify;
+            /* text-align: justify; */
             font-family: 'Inter';
             font-style: normal;
             font-weight: 200;
             font-size: 24px;
             line-height: 29px;
+            -moz-hyphens: auto;
+                -ms-hyphens: auto;
+                -webkit-hyphens: auto;
+            hyphens: auto;
+            margin: 1.5rem 0;
         }
     
         @media (max-width: 991px) {
@@ -239,6 +251,8 @@ section.product-banner {
 /* Services Page */
 
 .service-heading {
+    font-size: 30px;
+    margin-top: 30px;
     text-align: center;
     color: var(--secondary-color);
 }

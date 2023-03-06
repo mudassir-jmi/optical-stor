@@ -120,3 +120,11 @@ var swiper = new Swiper(".slide-content", {
   },
 });
  
+// model pop up
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}

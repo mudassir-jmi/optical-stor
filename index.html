@@ -17,7 +17,6 @@
     <script src="https://kit.fontawesome.com/7c78603360.js" crossorigin="anonymous"></script>
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
     
@@ -32,7 +31,7 @@
         <a href="#contact">Contact Us</a>
     </nav>
     <div class="icons">
-        <a href="appointment.html" target="_blank" class="primary-button">Appointment</a>
+        <button class="primary-button"  onclick="openForm()" data-modal="modalOne">Appointment</button>
         <div id="menu-btn" class="fas fa-bars"></div>
     </div>
 </header>
@@ -374,6 +373,31 @@
 </section>
 
 <!-- footer section ends -->
+
+<!-- popup form Start -->
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1 class="form-heading">Appointment Form</h1>
+
+        <label for="name"><strong>Name:</strong></label>
+        <input type="text" placeholder="Enter your Name" name="name" required>
+
+        <label for="tel"><strong>Contact Number:</strong></label>
+        <input type="password" placeholder="your Number" name="number" required>
+        <label for="date"><Strong>Date*:</Strong></label>
+        <input type="date" name="date" value="" required></input>
+        <br>
+        <label for="time"><strong>Time*:</strong></label>
+        <input type="time" name="time" value="" required></input>
+        <br>
+
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+<!-- popup form End -->
+
+
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
