@@ -141,7 +141,7 @@ section.product-banner {
 
 @media (max-width: 400px) {
     .pagination {
-        margin: 0 30px;
+        margin: 70px 30px;
     }
 }
 
@@ -255,23 +255,6 @@ section.product-banner {
     color: var(--secondary-color);
 }
 
-/* .service-btn {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1rem;
-    padding: .9rem 1rem;
-    border-radius: .5rem;
-    background: var(--primary-color);
-    color: #fff;
-    font-size: 1.6rem;
-    cursor: pointer;
-    text-decoration: none;
-    width: 150px;
-    height: 30px;
-}  */
-
 .checkup-btn,.service-btn {
     display: inline-block;
     margin-top: 1rem;
@@ -291,6 +274,7 @@ section.product-banner {
         padding: 0.6rem 0rem;
         font-size: 1.2rem;
         }
+
     }
 
 
