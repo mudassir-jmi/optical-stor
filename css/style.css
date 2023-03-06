@@ -708,10 +708,11 @@ section.services {
 }
 
 /* Add styles to the form container */
-.form-container {
+.form-container { 
   max-width: 300px;
   padding: 10px;
   background-color: white;
+  border-radius: 10px;
 }
 .form-container label {
   font-size: 16px;
